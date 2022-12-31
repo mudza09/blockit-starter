@@ -1,4 +1,4 @@
-# [Blockit Builder](https://www.indonez.com/blockit-builder)
+# [Blockit Starter](https://www.indonez.com/blockit-starter)
 
 A static HTML builder from Indonez, which will help you create the website you dream of.
 
@@ -17,7 +17,7 @@ Several quick start options are available:
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Mudza09/blockit-builder/issues/new).
+Have a bug or a feature request? Please first search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Mudza09/blockit-starter/issues/new).
 
 ## Creators
 
