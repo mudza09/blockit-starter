@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Premium HTML5 Template by Indonez">
+    <meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, javascript">
+    <meta name="author" content="Indonez">
+    <meta name="theme-color" content="#2E89EA" />
+    <!-- critical preload -->
+    <link rel="preload" href="js/vendors/bootstrap.bundle.min.js" as="script">
+    <link rel="preload" href="css/style.css" as="style">
+    <!-- icon preload -->
+    <link rel="preload" href="fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- font preload -->
+    <link rel="preload" href="fonts/nunito-v12-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/nunito-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Touch icon -->
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
+    <title>Homepage - Blockit Starter HTML5 Template</title>
+</head>
+
+<body>
+    <!-- page loader begin -->
+    <div class="page-loader w-100 h-100 bg-white d-flex justify-content-center align-items-center position-fixed overflow-hidden">
+        <div class="spinner-grow spinner-grow-sm text-primary"></div>
+        <div class="spinner-grow spinner-grow-sm text-primary"></div>
+        <div class="spinner-grow spinner-grow-sm text-primary"></div>
+    </div>
+    <!-- page loader end -->
+    <!-- header begin -->
+    <header class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/user/header-logo-LxR0VE.svg" alt="logo" width="123" height="36" class="d-inline-block">
+            </a>
+            <div class="collapse navbar-collapse d-flex justify-content-end d-none d-xl-block" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="optional-link d-flex align-items-center ms-4 d-none d-xl-block">
+                    <a href="signin.html" class="btn btn-link link-secondary text-decoration-none"><i class="fas fa-circle-user fa-sm"></i> Sign in</a>
+                    <a href="#" class="btn btn-dark btn-sm rounded-pill px-2">Create account</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <main>
+    <!-- slideshow content begin -->
+    <section>    
+        <div id="main-slideshow" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item bg-secondary">
+        <div class="carousel-caption d-flex align-items-center">
+            <div class="container text-light">
+                <div class="row row-cols-1 row-cols-md-2 gx-md-5 align-items-md-center">
+                    <div class="order-first">
+                        <h2 class="fw-bold">First slide label</h2>
+                        <p>Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid ea commodi fugiat consequatur reprehenderit.</p>
+                        <a href="#" class="btn btn-light">Learn more<i class="fas fa-angle-right fa-xs ms-1"></i></a>
+                    </div>
+                    <div class="order-last d-none d-md-block">
+                        <img src="img/blockit/in-blob-2.svg" class="d-block w-100" alt="slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <div class="carousel-item bg-danger">
+        <div class="carousel-caption d-flex align-items-center">
+            <div class="container text-light">
+                <div class="row row-cols-1 row-cols-md-2 gx-md-5 align-items-md-center">
+                    <div class="order-first">
+                        <h2 class="fw-bold">Second slide label</h2>
+                        <p>Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid ea commodi fugiat consequatur reprehenderit.</p>
+                        <a href="#" class="btn btn-light">Learn more<i class="fas fa-angle-right fa-xs ms-1"></i></a>
+                    </div>
+                    <div class="order-last d-none d-md-block">
+                        <img src="img/blockit/in-blob-2.svg" class="d-block w-100" alt="slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
+            <div class="carousel-indicators"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#main-slideshow" data-bs-slide="prev"></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#main-slideshow" data-bs-slide="next"></button>
+        </div>
+    </section>
+    <!-- slideshow content end -->
+    <!-- section content begin -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-2 g-md-2 g-lg-4">
+                <div class="col-md-12 col-lg-12">
+                    <h1 class="fw-bold text-center">Blockit heading 1 feature</h1>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="me-2 icon-wrap bg-light rounded-3 flex-shrink-0">
+                        <i class="fas fa-hiking fa-lg text-secondary"></i>
+                    </div>
+                    <div>
+                        <h3 class="h4 fw-bold">Feature heading</h3>
+                        <p>Maxime placeat facere possimus omnis voluptas assumenda est omni dolo repellendus temporus.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="me-2 icon-wrap bg-light rounded-3 flex-shrink-0">
+                        <i class="fas fa-running fa-lg text-secondary"></i>
+                    </div>
+                    <div>
+                        <h3 class="h4 fw-bold">Feature heading</h3>
+                        <p>Maxime placeat facere possimus omnis voluptas assumenda est omni dolo repellendus temporus.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="me-2 icon-wrap bg-light rounded-3 flex-shrink-0">
+                        <i class="fas fa-snowboarding fa-lg text-secondary"></i>
+                    </div>
+                    <div>
+                        <h3 class="h4 fw-bold">Feature heading</h3>
+                        <p>Maxime placeat facere possimus omnis voluptas assumenda est omni dolo repellendus temporus.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="me-2 icon-wrap bg-light rounded-3 flex-shrink-0">
+                        <i class="fas fa-hand-holding-usd fa-lg text-secondary"></i>
+                    </div>
+                    <div>
+                        <h3 class="h4 fw-bold">Feature heading</h3>
+                        <p>Maxime placeat facere possimus omnis voluptas assumenda est omni dolo repellendus temporus.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="me-2 icon-wrap bg-light rounded-3 flex-shrink-0">
+                        <i class="fas fa-drafting-compass fa-lg text-secondary"></i>
+                    </div>
+                    <div>
+                        <h3 class="h4 fw-bold">Feature heading</h3>
+                        <p>Maxime placeat facere possimus omnis voluptas assumenda est omni dolo repellendus temporus.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="me-2 icon-wrap bg-light rounded-3 flex-shrink-0">
+                        <i class="fas fa-chess-knight fa-lg text-secondary"></i>
+                    </div>
+                    <div>
+                        <h3 class="h4 fw-bold">Feature heading</h3>
+                        <p>Maxime placeat facere possimus omnis voluptas assumenda est omni dolo repellendus temporus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section content end -->
+    <!-- section content begin -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row gx-0">
+                <div class="col-md-12 col-lg-2 border-end-lg d-flex align-items-center justify-content-center justify-content-md-center justify-content-lg-start">
+                    <h5 class="fw-bold text-muted text-center mb-md-2 mb-lg-0">Our loyal client</h5>
+                </div>
+                <div class="col-md-12 col-lg-10">
+                    <div class="row row-cols-1 row-cols-md-4 row-cols-lg-5 gx-0">
+                        <div class="col text-center border-bottom border-bottom-md-0 border-end-md">
+                            <img class="opacity-75 my-2 my-md-1 my-lg-1" src="img/blockit/in-client-logo-1.svg" alt="client-logo" width="120" height="39">
+                        </div>
+                        <div class="col text-center border-bottom border-bottom-md-0 border-end-md">
+                            <img class="opacity-75 my-2 my-md-1 my-lg-1" src="img/blockit/in-client-logo-2.svg" alt="client-logo" width="120" height="39">
+                        </div>
+                        <div class="col text-center border-bottom border-bottom-md-0 border-end-md">
+                            <img class="opacity-75 my-2 my-md-1 my-lg-1" src="img/blockit/in-client-logo-3.svg" alt="client-logo" width="120" height="39">
+                        </div>
+                        <div class="col text-center border-bottom border-bottom-md-0 border-end-md-0 border-end-lg">
+                            <img class="opacity-75 my-2 my-md-1 my-lg-1" src="img/blockit/in-client-logo-4.svg" alt="client-logo" width="120" height="39">
+                        </div>
+                        <div class="col text-center d-md-none d-lg-block">
+                            <img class="opacity-75 my-2 my-md-1 my-lg-1" src="img/blockit/in-client-logo-5.svg" alt="client-logo" width="120" height="39">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section content end -->
+    </main>
+    <!-- footer begin -->
+    <footer class="bg-light py-4">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 text-muted align-items-center">
+                <div class="col text-center text-md-center text-lg-start mb-2 mb-md-3 mb-lg-0">
+                    <p class="copyright-text mb-0">Blockit, a premade sections layout by <a class="link-primary text-decoration-none" href="https://www.indonez.com/" target="blank"><span class="fw-bold">Indonez</span></a> built using Bootstrap</p>
+                </div>
+                <div class="col">
+                    <div class="footer-logo d-flex justify-content-center justify-content-md-center justify-content-lg-end align-item-center">
+                        <!-- social media begin -->
+                        <div class="social-media-list small hstack gap-3">
+                        <div><a href="https://www.facebook.com/indonez" class="color-facebook text-decoration-none"><i class="fab fa-facebook-square"></i> Facebook</a></div>
+                        <div><a href="https://twitter.com/indonez_tw" class="color-twitter text-decoration-none"><i class="fab fa-twitter"></i> Twitter</a></div>
+                        <div><a href="https://www.instagram.com/indonez_ig/" class="color-instagram text-decoration-none"><i class="fab fa-instagram"></i> Instagram</a></div>
+                        </div>
+                        <!-- social media end -->
+                        <img class="ms-2 d-md-none d-inline-block d-lg-inline-block" src="img/user/footer-logo-5vqlhba3vbl.svg" alt="footer-logo" width="34" height="34">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- to top begin -->
+    <div class="d-none d-md-block">
+        <a href="#" class="to-top fas fa-arrow-up text-decoration-none text-white"></a>
+    </div>
+    <!-- to top end -->
+    <!-- javascript -->
+    <script src="js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="js/vendors/bigger-picture.min.js"></script>
+    <script src="js/vendors/isotope.min.js"></script>
+    <script src="js/utilities.min.js"></script>
+    <script src="js/config-theme.js"></script>
+</body>
+
+</html>

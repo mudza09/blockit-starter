@@ -1,0 +1,9 @@
+.blockquote {
+    &.blockquote-border {
+        -webkit-box-shadow: inset 3px 0px 0px 0px #e6e6e6;
+        box-shadow: inset 3px 0px 0px 0px #e6e6e6;
+        margin-bottom: 2.6rem;
+        padding: 6px 0 6px 26px;
+        font-style: italic;
+    }
+}
