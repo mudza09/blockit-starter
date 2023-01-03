@@ -1,7 +1,7 @@
 {
   "name": "starter",
   "title": "Starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is starter template for using Blockit Builder",
   "private": true,
   "scripts": {
@@ -20,6 +20,6 @@
     "isotope-layout": "3.0.6"
   },
   "devDependencies": {
-    "blockit-builder": "^3.0.0"
+    "blockit-builder": "^3.0.2"
   }
 }
