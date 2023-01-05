@@ -271,10 +271,13 @@ class Blog {
     }
 
     postFormat({link, title, content, author, date, category}) {
+        const path = location.pathname.split('/')
+        path[path.length-1] = 'blog'
+
         return `<article class="card mb-4">
     <div class="card-body blog-card p-3 p-md-4">
         <h3 class="fw-bold">
-            <a href="/blog/${link}" class="link-dark text-decoration-none">${title}</a>
+            <a href="${path.join('/')}/${link}" class="link-dark text-decoration-none">${title}</a>
         </h3>
         <p>${content}</p>
         <div class="blog-author d-flex align-items-center">
@@ -286,7 +289,7 @@ class Blog {
     </div>
     <div class="card-footer blog-footer d-flex justify-content-between align-items-center px-3 px-md-4 py-2">
         <span class="badge bg-primary">${category}</span>
-        <a href="${link}" class="btn btn-link text-decoration-none p-0">Read more<i class="fas fa-angle-right fa-xs ms-1"></i></a>
+        <a href="${path.join('/')}/${link}" class="btn btn-link text-decoration-none p-0">Read more<i class="fas fa-angle-right fa-xs ms-1"></i></a>
     </div>
 </article>`
     }
