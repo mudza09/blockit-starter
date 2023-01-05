@@ -10,7 +10,7 @@
   "tags": [
     "diet"
   ],
-  "image": false,
+  "image": "img/user/image-featured-S3bwOc.jpg",
   "hidden": false,
   "blocks": [
     {
@@ -67,7 +67,7 @@
     }
   ],
   "dateCreated": "December 29, 2022",
-  "dateModified": "December 29, 2022",
+  "dateModified": "January 04, 2023",
   "timeCreated": "04:08 PM",
-  "timeModified": "08:58 PM"
+  "timeModified": "10:15 PM"
 }

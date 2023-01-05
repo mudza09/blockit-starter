@@ -46,12 +46,18 @@
     "siteLogo": {
       "exist": true,
       "enabled": true,
-      "index": "0",
       "logo": {
         "src": "img/user/footer-logo-5vqlhba3vbl.svg",
         "width": "34",
         "height": "34"
       }
+    },
+    "hooks": {
+      "logoIndex": "0",
+      "showClass": "d-lg-inline-block",
+      "hideClass": "d-none",
+      "logoClass": "footer-logo",
+      "copyrightClass": "copyright-text"
     }
   },
   "contactMap": {
