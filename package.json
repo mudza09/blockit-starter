@@ -20,6 +20,6 @@
     "isotope-layout": "3.0.6"
   },
   "devDependencies": {
-    "blockit-builder": "^3.0.2"
+    "blockit-builder": "^3.0.3"
   }
 }
