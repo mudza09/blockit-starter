@@ -1,0 +1,16 @@
+{
+    "footerHook": {
+        "useLogo": false,
+        "logoIndex": 0,
+        "showClass": "d-block",
+        "hideClass": "d-none",
+        "logoClass": "footer-logo",
+        "copyrightClass": "copyright-text"
+    },
+    "jsVendors": [
+        "./node_modules/particles.js/particles.js",
+        "./node_modules/plyr/dist/plyr.min.js",
+        "./node_modules/share-buttons/dist/share-buttons.js",
+        "./node_modules/uikit/dist/js/uikit.min.js"
+    ]
+}

@@ -41,7 +41,7 @@ class ActiveMenu {
     addActiveBlog(navbarPath, blogPath) {
         const urlParams = window.location.href.split( '/' )
 
-        if(urlParams[urlParams.length - 2] == 'blog') {
+        if(urlParams[urlParams.length - 2] == 'blog' || document.querySelector('[data-title="blog-find"]')) {
             navbarPath.forEach(e => {
                 if(e.pathname.split('/').at(-1) == blogPath) {
                     e.classList.add(this.activeClass)

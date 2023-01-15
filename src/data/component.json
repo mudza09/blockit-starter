@@ -44,20 +44,12 @@
   "footer": {
     "copyrightText": "Blockit, a premade sections layout by <a class=\"link-primary text-decoration-none\" href=\"https://www.indonez.com/\" target=\"blank\"><span class=\"fw-bold\">Indonez</span></a> built using Bootstrap",
     "siteLogo": {
-      "exist": true,
       "enabled": true,
       "logo": {
         "src": "img/user/footer-logo-3mQgan.svg",
         "width": "34",
         "height": "34"
       }
-    },
-    "hooks": {
-      "logoIndex": "0",
-      "showClass": "d-lg-inline-block",
-      "hideClass": "d-none",
-      "logoClass": "footer-logo",
-      "copyrightClass": "copyright-text"
     }
   },
   "contactMap": {

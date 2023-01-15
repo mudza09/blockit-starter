@@ -2,10 +2,7 @@
   {
     "title": "Home",
     "slug": "home",
-    "link": "index.html",
-    "dropdown": {
-      "child": []
-    }
+    "link": "index.html"
   },
   {
     "title": "About",
