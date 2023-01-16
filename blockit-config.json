@@ -8,9 +8,9 @@
         "copyrightClass": "copyright-text"
     },
     "jsVendors": [
-        "./node_modules/particles.js/particles.js",
-        "./node_modules/plyr/dist/plyr.min.js",
-        "./node_modules/share-buttons/dist/share-buttons.js",
-        "./node_modules/uikit/dist/js/uikit.min.js"
+        "./node_modules/bigger-picture/dist/bigger-picture.min.js",
+        "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+        "./node_modules/isotope-layout/dist/isotope.pkgd.min.js",
+        "./node_modules/share-buttons/dist/share-buttons.js"
     ]
 }

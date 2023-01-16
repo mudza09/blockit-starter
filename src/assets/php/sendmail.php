@@ -1,5 +1,5 @@
 <?php
-/*! in-sendmail.php | https://github.com/Divlo/Contact-Form | Divlo | MIT License */
+/*! sendmail.php | https://github.com/Divlo/Contact-Form | Divlo | MIT License */
 
     $array = array("name" => "", "email" => "", "subject" => "", "message" => "", "nameError" => "", "emailError" => "", "subjectError" => "", "messageError" => "", "isSuccess" => false); 
     $emailTo = "edunet09@gmail.com"; // Email to replace by your
