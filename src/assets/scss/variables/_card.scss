@@ -1,0 +1,8 @@
+$card-spacer-y:                 1.75rem;
+$card-spacer-x:                 1.75rem;
+$card-cap-padding-y:            1.75rem;
+$card-cap-padding-x:            $card-spacer-x;
+$card-border-width:             $border-width;
+$card-border-color:             #e8e8e8;
+$card-border-radius:            $border-radius-sm;
+$card-inner-border-radius:      subtract($border-radius-sm, $card-border-width);

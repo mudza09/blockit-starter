@@ -1,0 +1,10 @@
+.breadcrumb-item {
+    padding: 1.28rem 0;
+    a {
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+        &:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+}

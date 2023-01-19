@@ -1,8 +1,4 @@
 // Carousel
-// .carousel-item {
-//     min-height: 400px;
-// }
-
 .carousel-caption {
     position: absolute;
     top: 0;
@@ -126,9 +122,6 @@
 }
 
 @include media-breakpoint-down(lg) {
-    // .carousel-item {
-    //     min-height: 350px;
-    // }
     .carousel-control-prev,
     .carousel-control-next {
         display: none;
@@ -136,9 +129,6 @@
 }
 
 @include media-breakpoint-down(md) {
-    // .carousel-item {
-    //     min-height: 300px;
-    // }
     .carousel-control-prev,
     .carousel-control-next {
         display: none;

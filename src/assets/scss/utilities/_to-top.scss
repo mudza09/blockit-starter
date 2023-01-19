@@ -1,0 +1,22 @@
+// To top
+.to-top {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0.75rem);
+    transition: all 200ms linear;
+    background-color: $primary;
+    border-radius: $border-radius-pill;
+    &.to-top-animation {
+        visibility: visible;
+        transform: translateY(0);
+    }
+}

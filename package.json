@@ -1,7 +1,7 @@
 {
   "name": "starter",
   "title": "Starter",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "This is starter template for using Blockit Builder",
   "private": true,
   "scripts": {

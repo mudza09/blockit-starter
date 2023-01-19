@@ -1,0 +1,43 @@
+// Brand colors
+$brand-colors: (
+    "email": #445761,
+    "google": #4687f2,
+    "facebook": #3b5998,
+    "twitter": #00acee,
+    "pinterest": #BD081C,
+    "youtube": #c4302b,
+    "instagram": #DD2A7B,
+    "telegram": #0088CC,
+    "whatsapp": #128c7e,
+    "linkedin": #0077b5,
+    "behance": #1769ff,
+    "dribbble": #ea4c89,
+    "html5": #e75c2e,
+    "css3": #2d9ed9,
+    "javascript": #efd835,
+    "sass": #c66396,
+    "bootstrap": #7953b1
+);
+
+@each $key, $val in $brand-colors {
+    .bg-#{$key} {
+        color: $white;
+        background-color: $val;
+    }
+
+    a.bg-#{$key}:hover {
+        color: $white;
+        background-color: darken($val, 10%);
+    }
+
+    .color-#{$key} {
+        color: $val;
+    }
+
+    a.color-#{$key} {
+        text-decoration: none;
+        &:hover {
+            color: darken($val, 10%);
+        }
+    }
+}

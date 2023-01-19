@@ -1,50 +1,26 @@
-// Options
-$enable-negative-margins: true;
-
-// Bootstrap Configuration
-@import "../../../node_modules/bootstrap/scss/functions";
-@import "../../../node_modules/bootstrap/scss/variables";
-@import "../../../node_modules/bootstrap/scss/maps";
-@import "../../../node_modules/bootstrap/scss/mixins";
-
-// Fonts
-@import "fonts";
+// Theme fonts
+@import "theme/fonts";
 
 // Theme colors
-@import "colors";
+@import "theme/colors";
 
-// Custom variables
-@import "variables";
+// Theme global
+@import "theme/global";
 
-// Custom mixins
-@import "mixins";
-
-// Utilities
-@import "utilities";
+// Custom Bootstrap variables
+@import "variables/variables";
 
 // Bootstrap
 @import "bootstrap";
 
-// Bootstrap Utilities API
-@import "../../../node_modules/bootstrap/scss/utilities/api";
+// Blockit
+@import "blockit/blockit";
 
 // Vendors
-@import "vendors/fontawesome";
-@import "vendors/bigger-picture";
+@import "vendors/vendors";
 
-// Theme bootstrap
-@import "theme/theme";
-
-// Bootstrap Helpers
-@import "../../../node_modules/bootstrap/scss/helpers/clearfix";
-@import "../../../node_modules/bootstrap/scss/helpers/colored-links";
-@import "../../../node_modules/bootstrap/scss/helpers/position";
-@import "../../../node_modules/bootstrap/scss/helpers/ratio";
-@import "../../../node_modules/bootstrap/scss/helpers/stacks";
-@import "../../../node_modules/bootstrap/scss/helpers/stretched-link";
-@import "../../../node_modules/bootstrap/scss/helpers/text-truncation";
-@import "../../../node_modules/bootstrap/scss/helpers/visually-hidden";
-@import "../../../node_modules/bootstrap/scss/helpers/vr";
+// Utilities
+@import "utilities/utilities";
 
 // Theme custom
-@import 'custom';
+@import 'theme/custom';

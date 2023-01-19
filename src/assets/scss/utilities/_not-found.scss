@@ -1,0 +1,17 @@
+// 404 not found
+.not-found {
+    h1 {
+        font-size: 7.3rem;
+        position: relative;
+        top: 5px;
+    }
+    @include media-breakpoint-down(sm) {
+        .fa-6x {
+            font-size: 4.6rem;
+        }
+        h1 {
+            font-size: 5.6rem;
+            top: 3px;
+        }
+    }
+}
