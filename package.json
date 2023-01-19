@@ -21,6 +21,6 @@
     "share-buttons": "1.9.0"
   },
   "devDependencies": {
-    "blockit-builder": "^3.0.6"
+    "blockit-builder": "^3.0.7"
   }
 }
