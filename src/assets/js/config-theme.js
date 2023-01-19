@@ -9,7 +9,6 @@
     1. Slideshow
     2. Counter
     3. Mobile nav button
-    4. Isotope filter
  * -------------------------------------------------------------------------- */
 
     'use strict';
@@ -60,29 +59,10 @@
                 ]
             }).init();
         },
-        //---------- 5. Isotope filter -----------
-        theme_isotope: function() {
-            const isoWrapper = document.querySelectorAll('.isotope-wrapper')
-            const isoFilter = document.querySelectorAll('.isotope-filter')
-
-            isoWrapper.forEach((elem, index) => {
-                const isotope = new Isotope(elem, {
-                    animationOptions: {
-                        duration: 750,
-                        easing: 'linear',
-                        queue: false
-                    }
-                })
-                isoFilter[index].addEventListener('click', e => {
-                    isotope.arrange({ filter: e.target.getAttribute('data-filter') })
-                })
-            });
-        },
         theme_init: function() {
             HomepageApp.theme_slideshow();
             HomepageApp.theme_counter();
             HomepageApp.theme_mobilenav();
-            HomepageApp.theme_isotope();
         }
     }
     

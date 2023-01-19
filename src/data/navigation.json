@@ -15,6 +15,11 @@
     "link": "blog.html"
   },
   {
+    "title": "Gallery",
+    "slug": "gallery",
+    "link": "gallery.html"
+  },
+  {
     "title": "Contact",
     "slug": "contact",
     "link": "contact.html"

@@ -2,7 +2,7 @@
 /*! sendmail.php | https://github.com/Divlo/Contact-Form | Divlo | MIT License */
 
     $array = array("name" => "", "email" => "", "subject" => "", "message" => "", "nameError" => "", "emailError" => "", "subjectError" => "", "messageError" => "", "isSuccess" => false); 
-    $emailTo = "hello@company.com";
+    $emailTo = "edunet09@gmail.com"; // Email to replace by your
     $message  = nl2br($_POST['message']);
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") { 

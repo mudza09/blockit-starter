@@ -67,7 +67,7 @@ class ActiveMenu {
     }
 
     hoverAction(elem, mouse) {
-        if(mouse == 'click') {
+        if(mouse == 'click' && !elem.classList.contains('masonry-filter')) {
             location.assign(elem.parentElement.children[0].getAttribute('href'))
         }
         if(mouse == 'enter') {
