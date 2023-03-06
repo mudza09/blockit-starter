@@ -27,6 +27,7 @@ class ActiveMenu {
                 navbarParam.forEach(e => {
                     if(e.attributes[1].value.includes('../') && e.attributes[1].value.slice(3) == this.path) e.classList.add(this.activeClass)
                     if(e.attributes[1].value == this.path) e.classList.add(this.activeClass)
+                    if(this.path.includes('blog-page') && e.attributes[1].value == this.blogPath) e.classList.add(this.activeClass)
                 })
     }
 
