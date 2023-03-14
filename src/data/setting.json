@@ -45,7 +45,10 @@
     }
   ],
   "blog": {
-    "asBlog": "blog.hbs",
+    "asBlog": [
+      "blog",
+      "keren"
+    ],
     "categories": [
       "Health",
       "Politics",

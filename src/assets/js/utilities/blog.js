@@ -7,6 +7,7 @@ class Blog {
         this.latestWrap = document.querySelector('.widget-latest')
         this.urlParams = window.location.href.split( '/' )
         this.currentPage = this.urlParams.pop()
+        this.sanitizePath = this.sanitizePage(this.currentPage)
     }
 
     init() {
@@ -15,7 +16,7 @@ class Blog {
             .then(responses => {
                 return Promise.all(responses.map(response => response.json()))
             })
-            .then(data => {                
+            .then(data => {           
                 this.createCategoryWidget(data)
                 this.createLatestWidget(data)
                 this.createTagWidget(data)
@@ -33,9 +34,9 @@ class Blog {
 
     getData() {
         return Promise.all([
-            fetch('blog/data/data-blog.json'),
-            fetch('blog/data/data-category.json'),
-            fetch('blog/data/data-tag.json')
+            fetch(`${this.sanitizePath}/data/data-blog.json`),
+            fetch(`${this.sanitizePath}/data/data-category.json`),
+            fetch(`${this.sanitizePath}/data/data-tag.json`)
         ])
     }
 
@@ -48,6 +49,17 @@ class Blog {
         })
     }
 
+    sanitizePage(url) {
+        if (url.includes('find')) {
+            return this.currentPage.split('.')[0].split('-').slice(0, -1).join('-')
+        }
+        if (url.includes('page')) {
+            const index = this.currentPage.split('.')[0].split('-').indexOf('page')
+            return this.currentPage.split('.')[0].split('-').slice(0, index).join('-')
+        }
+        return this.currentPage.split('.')[0]
+    }
+
     createCategoryWidget(data) {
         if(document.querySelector('.widget-categories') !== null) {
             data[1].sort((a, b) => {
@@ -57,20 +69,17 @@ class Blog {
             })
             const categoryFilter = data[1].filter(item => item.category !== 'Uncategorized')
             categoryFilter.forEach(eachData => {
-                this.categoryWrap.innerHTML += `<li><a href="blog-find.html?category=${eachData.category.toLowerCase()}" class="link-dark text-decoration-none d-flex justify-content-between align-items-center">${eachData.category}<span class="badge rounded-1">${eachData.totalPost}</span></a></li>`
+                this.categoryWrap.innerHTML += `<li><a href="${this.sanitizePath}-find.html?category=${eachData.category.toLowerCase()}" class="link-dark text-decoration-none d-flex justify-content-between align-items-center">${eachData.category}<span class="badge rounded-1">${eachData.totalPost}</span></a></li>`
             })
         }
     }
 
     createLatestWidget(data) {
-        const path = location.pathname.split('/')
-        path[path.length-1] = 'blog'
-
         if(document.querySelector('.widget-latest') !== null) {
             data[0].latestPost.forEach(each => {
                 this.latestWrap.innerHTML += `
                 <li class="list-group-item bg-transparent px-0">
-                    <a href="${path.join('/')}/${each.link}" class="link-dark text-decoration-none">${this.trimLongTitle(each.title, 55)}</a><br>
+                    <a href="${this.sanitizePath}/${each.link}" class="link-dark text-decoration-none">${this.trimLongTitle(each.title, 55)}</a><br>
                     <small class="text-muted"><i class="fas fa-clock fa-sm me-1"></i>${each.date}</small>
                 </li>
                 `
@@ -84,7 +93,7 @@ class Blog {
             const tagFilter = data[0].tagLists.filter(item => item !== 'untagged')
             tagFilter.forEach(eachTag => {
                 if(eachTag.length !== 0) {
-                    this.tagWrap.innerHTML += `<a href="blog-find.html?tag=${eachTag}"><span class="badge rounded-pill">#${eachTag}</span></a>`
+                    this.tagWrap.innerHTML += `<a href="${this.sanitizePath}-find.html?tag=${eachTag}"><span class="badge rounded-pill">#${eachTag}</span></a>`
                 } else {
                     this.tagWrap.innerHTML = '<small class="text-muted">No tags available yet</small>'
                 }
@@ -96,7 +105,7 @@ class Blog {
         if(document.querySelector('[data-title="blog"]')) {
             const element = document.querySelector('.pagination')
             const totalPages = data[0].totalPages
-            const page = !this.currentPage.includes('blog-page') ? 1 : parseInt(this.currentPage.substring(10).slice(0, -5))
+            const page = !this.currentPage.includes(`${this.sanitizePath}-page`) ? 1 : parseInt(this.currentPage.split('.')[0].split('-').pop())
 
             let liTag = ''
             let active = ''
@@ -140,12 +149,12 @@ class Blog {
                 }else{ // else leave empty to the active variable
                     active = ''
                 }
-                liTag += `<li class="page-item ${active}"><a class="page-link" href="${plength == 1 ? data[0].asBlog : `blog-page-${plength}.html`}">${plength}</a></li>`
+                liTag += `<li class="page-item ${active}"><a class="page-link" href="${plength == 1 ? data[0].asBlog : `${this.sanitizePath}-page-${plength}.html`}">${plength}</a></li>`
             }
 
             // show the next button if the page value is less than totalPage(20)
             if (page < totalPages - 1) { 
-                liTag += `<li class="page-item"><a class="page-link" href="blog-page-${totalPages}.html" aria-label="next"><span aria-hidden="true">&raquo;</span></a></li>`
+                liTag += `<li class="page-item"><a class="page-link" href="${this.sanitizePath}-page-${totalPages}.html" aria-label="next"><span aria-hidden="true">&raquo;</span></a></li>`
             }
             // add li tag inside ul tag
             element.innerHTML = liTag
@@ -224,7 +233,7 @@ class Blog {
                     const params = new URLSearchParams()
 
                     params.append('result', term)
-                    location.href = `blog-find.html?${params.toString()}`
+                    location.href = `${this.sanitizePath}-find.html?${params.toString()}`
                 }
             })
 
@@ -271,13 +280,10 @@ class Blog {
     }
 
     postFormat({link, title, content, author, date, category}) {
-        const path = location.pathname.split('/')
-        path[path.length-1] = 'blog'
-
         return `<article class="card mb-4">
     <div class="card-body blog-card p-3 p-md-4">
         <h3 class="fw-bold">
-            <a href="${path.join('/')}/${link}" class="link-dark text-decoration-none">${title}</a>
+            <a href="${this.sanitizePath}/${link}" class="link-dark text-decoration-none">${title}</a>
         </h3>
         <p>${content}</p>
         <div class="blog-author d-flex align-items-center">
@@ -289,7 +295,7 @@ class Blog {
     </div>
     <div class="card-footer blog-footer d-flex justify-content-between align-items-center px-3 px-md-4 py-2">
         <span class="badge bg-primary">${category}</span>
-        <a href="${path.join('/')}/${link}" class="btn btn-link text-decoration-none p-0">Read more<i class="fas fa-angle-right fa-xs ms-1"></i></a>
+        <a href="${this.sanitizePath}/${link}" class="btn btn-link link-primary text-decoration-none p-0">Read more<i class="fas fa-arrow-right fa-sm ms-1"></i></a>
     </div>
 </article>`
     }
