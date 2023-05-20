@@ -74,6 +74,7 @@
       "html": false,
       "css": false,
       "js": false
-    }
+    },
+    "preloadCritical": true
   }
 }

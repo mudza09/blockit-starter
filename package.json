@@ -1,7 +1,7 @@
 {
   "name": "starter",
   "title": "Starter",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "This is starter template for using Blockit Builder",
   "private": true,
   "scripts": {
@@ -21,6 +21,6 @@
     "shufflejs": "6.1.0"
   },
   "devDependencies": {
-    "blockit-builder": "3.1.1"
+    "blockit-builder": "^3.2.0"
   }
 }

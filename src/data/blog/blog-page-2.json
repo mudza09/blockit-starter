@@ -77,7 +77,9 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "timeCreated": "04:08 PM"
+      "dateModified": "January 04, 2023",
+      "timeCreated": "04:08 PM",
+      "timeModified": "10:15 PM"
     },
     {
       "title": "A defiant move to the Norwegian Arctic",
@@ -150,7 +152,9 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "timeCreated": "04:03 PM"
+      "dateModified": "December 29, 2022",
+      "timeCreated": "04:03 PM",
+      "timeModified": "04:04 PM"
     },
     {
       "title": "The Bidens make an island escape ahead of consequential 2024 announcement",
@@ -228,7 +232,9 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "timeCreated": "03:56 PM"
+      "dateModified": "December 29, 2022",
+      "timeCreated": "03:56 PM",
+      "timeModified": "04:12 PM"
     }
   ]
 }
