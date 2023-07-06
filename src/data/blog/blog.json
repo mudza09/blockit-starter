@@ -6,7 +6,25 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Investing",
       "tags": [
@@ -14,6 +32,8 @@
         "usa"
       ],
       "image": "img/user/image-featured-a4DfvV.jpg",
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -82,9 +102,9 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "January 04, 2023",
+      "dateModified": "July 05, 2023",
       "timeCreated": "04:19 PM",
-      "timeModified": "10:20 PM"
+      "timeModified": "07:18 PM"
     },
     {
       "title": "Biden and Harris celebrate Kwanzaa in social media posts",
@@ -92,7 +112,25 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Politics",
       "tags": [
@@ -100,6 +138,8 @@
         "usa"
       ],
       "image": false,
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -148,9 +188,9 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "December 29, 2022",
+      "dateModified": "July 05, 2023",
       "timeCreated": "04:16 PM",
-      "timeModified": "09:46 PM"
+      "timeModified": "02:09 PM"
     },
     {
       "title": "Amazon’s started to deliver orders by drones in California and Texas",
@@ -158,13 +198,33 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Technology",
       "tags": [
         "usa"
       ],
       "image": false,
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -220,9 +280,9 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "December 29, 2022",
+      "dateModified": "July 05, 2023",
       "timeCreated": "04:12 PM",
-      "timeModified": "09:41 PM"
+      "timeModified": "02:08 PM"
     },
     {
       "title": "Thinking of going vegan? What you need to know first",
@@ -230,13 +290,33 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Health",
       "tags": [
         "diet"
       ],
       "image": "img/user/image-featured-S3bwOc.jpg",
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -293,9 +373,9 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "January 04, 2023",
+      "dateModified": "July 05, 2023",
       "timeCreated": "04:08 PM",
-      "timeModified": "10:15 PM"
+      "timeModified": "02:07 PM"
     },
     {
       "title": "A defiant move to the Norwegian Arctic",
@@ -303,13 +383,33 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Travel",
       "tags": [
         "europe"
       ],
       "image": false,
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -368,9 +468,9 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "December 29, 2022",
+      "dateModified": "July 05, 2023",
       "timeCreated": "04:03 PM",
-      "timeModified": "04:04 PM"
+      "timeModified": "02:06 PM"
     },
     {
       "title": "The Bidens make an island escape ahead of consequential 2024 announcement",
@@ -378,7 +478,25 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Politics",
       "tags": [
@@ -386,6 +504,8 @@
         "usa"
       ],
       "image": false,
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -448,9 +568,9 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "December 29, 2022",
+      "dateModified": "July 05, 2023",
       "timeCreated": "03:56 PM",
-      "timeModified": "04:12 PM"
+      "timeModified": "02:05 PM"
     },
     {
       "title": "Here are 3 year-end strategies for high-net-worth families to consider",
@@ -458,7 +578,25 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Investing",
       "tags": [
@@ -466,6 +604,8 @@
         "wealth"
       ],
       "image": "img/user/image-featured-cHWUtS.jpg",
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -550,9 +690,9 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "January 04, 2023",
+      "dateModified": "July 05, 2023",
       "timeCreated": "03:37 PM",
-      "timeModified": "10:27 PM"
+      "timeModified": "02:04 PM"
     },
     {
       "title": "The LastPass disclosure of leaked password vaults is being torn apart by security experts",
@@ -560,13 +700,33 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Technology",
       "tags": [
         "security"
       ],
       "image": false,
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -615,9 +775,9 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "December 29, 2022",
+      "dateModified": "July 05, 2023",
       "timeCreated": "03:29 PM",
-      "timeModified": "04:21 PM"
+      "timeModified": "02:03 PM"
     },
     {
       "title": "Turf houses: Iceland's original 'green' buildings",
@@ -625,13 +785,33 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Travel",
       "tags": [
         "europe"
       ],
       "image": false,
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -690,9 +870,9 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "December 29, 2022",
+      "dateModified": "July 05, 2023",
       "timeCreated": "03:21 PM",
-      "timeModified": "04:21 PM"
+      "timeModified": "02:02 PM"
     },
     {
       "title": "Shortfalls of some cold and flu meds continue amid shifting respiratory virus season",
@@ -700,13 +880,33 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Health",
       "tags": [
         "virus"
       ],
       "image": false,
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -792,9 +992,9 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "December 29, 2022",
+      "dateModified": "July 05, 2023",
       "timeCreated": "03:04 PM",
-      "timeModified": "04:12 PM"
+      "timeModified": "02:01 PM"
     }
   ]
 }

@@ -1,1 +1,0 @@
-put your custom section preview webp files here.

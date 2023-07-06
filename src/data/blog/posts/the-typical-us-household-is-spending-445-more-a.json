@@ -4,7 +4,25 @@
   "author": {
     "id": "tXeY2N",
     "name": "Warren Wong",
-    "avatar": "img/user/author-85z9UC.jpg"
+    "avatar": "img/user/author-85z9UC.jpg",
+    "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+    "socialMedia": [
+      {
+        "facebook": "#some-link"
+      },
+      {
+        "twitter": "#some-link"
+      },
+      {
+        "instagram": false
+      },
+      {
+        "linkedin": "#some-link"
+      },
+      {
+        "website": "#some-link"
+      }
+    ]
   },
   "category": "Investing",
   "tags": [
@@ -12,6 +30,8 @@
     "usa"
   ],
   "image": "img/user/image-featured-a4DfvV.jpg",
+  "biography": true,
+  "comments": true,
   "hidden": false,
   "blocks": [
     {
@@ -80,7 +100,7 @@
     }
   ],
   "dateCreated": "December 29, 2022",
-  "dateModified": "January 04, 2023",
+  "dateModified": "July 05, 2023",
   "timeCreated": "04:19 PM",
-  "timeModified": "10:20 PM"
+  "timeModified": "07:18 PM"
 }

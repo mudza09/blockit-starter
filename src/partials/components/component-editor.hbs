@@ -9,13 +9,14 @@
     {{~#ifequal this.data.level 3~}}<h3 class="fw-bold mb-1">{{this.data.text}}</h3>{{/ifequal}}
     {{~#ifequal this.data.level 4~}}<h4 class="fw-bold mb-1">{{this.data.text}}</h4>{{/ifequal}}
     {{~#ifequal this.data.level 5~}}<h5 class="fw-bold mb-1">{{this.data.text}}</h5>{{/ifequal}}
+    {{~#ifequal this.data.level 6~}}<h6 class="fw-bold mb-1">{{this.data.text}}</h6>{{/ifequal}}
 {{/ifequal}}
 {{!-- Image block --}}
 {{#ifequal this.type "image"}}
-<figure class="figure my-3">
-    <img src="{{@root.root}}{{this.data.file.url}}" class="img-fluid{{#unless this.data.caption}} mb-2{{/unless}}"{{#if this.data.caption}} alt="{{this.data.caption}}"{{/if}}>
+<figure class="figure">
+    <img src="{{@root.root}}{{this.data.file.url}}" class="img-fluid" {{#if this.data.caption}}alt="{{this.data.caption}}"{{/if}}>
     {{#if this.data.caption}}
-    <figcaption class="figure-caption text-center text-muted py-1">{{this.data.caption}}</figcaption>
+    <figcaption class="figure-caption text-center text-muted mt-1">{{this.data.caption}}</figcaption>
     {{/if}}
 </figure>
 {{/ifequal}}
@@ -45,7 +46,7 @@
 {{/ifequal}}
 {{!-- Table block --}}
 {{#ifequal this.type "table"}}
-<table class="table table-bordered my-3">
+<table class="table table-bordered">
     {{#each this.data.content}}
         <tbody>
             <tr>

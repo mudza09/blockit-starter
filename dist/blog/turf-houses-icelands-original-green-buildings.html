@@ -2,191 +2,232 @@
 <html lang="en">
 
 <head>
-    <!-- meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Premium HTML5 Template by Indonez">
-    <meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, javascript">
-    <meta name="author" content="Indonez">
-    <meta name="theme-color" content="#2E89EA" />
-    <!-- preload assets -->
-    <link rel="preload" href="../fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../fonts/nunito-v12-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../fonts/nunito-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../css/style.css" as="style">
-    <link rel="preload" href="../js/vendors/bootstrap.bundle.min.js" as="script">
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="../css/style.css">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <!-- touch icon -->
-    <link rel="apple-touch-icon-precomposed" href="../img/apple-touch-icon.png">
-    <title>Blog - Blockit Starter HTML5 Template</title>
+	<!-- meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Premium HTML5 Template by Indonez">
+	<meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, javascript">
+	<meta name="author" content="Indonez">
+	<meta name="theme-color" content="#2E89EA" />
+	<!-- preload assets -->
+	<link rel="preload" href="../fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="../fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="../fonts/nunito-v12-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="../fonts/nunito-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="../css/style.css" as="style">
+	<link rel="preload" href="../js/vendors/bootstrap.bundle.min.js" as="script">
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="../css/style.css">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<!-- touch icon -->
+	<link rel="apple-touch-icon-precomposed" href="../img/apple-touch-icon.png">
+	<title>Blog - Blockit Starter HTML5 Template</title>
 </head>
 
 <body>
-    <!-- page loader begin -->
-    <div class="page-loader w-100 h-100 bg-white d-flex justify-content-center align-items-center position-fixed overflow-hidden">
-        <div class="spinner-grow spinner-grow-sm text-primary"></div>
-        <div class="spinner-grow spinner-grow-sm text-primary"></div>
-        <div class="spinner-grow spinner-grow-sm text-primary"></div>
-    </div>
-    <!-- page loader end -->
-    <!-- header begin -->
-    <header class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/user/header-logo-LxR0VE.svg" alt="logo" width="123" height="36" class="d-inline-block">
-            </a>
-            <div class="collapse navbar-collapse d-flex justify-content-end d-none d-xl-block" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../contact.html">Contact</a>
-                    </li>
-                </ul>
-                <div class="optional-link d-flex align-items-center ms-4 d-none d-xl-block">
-                    <a href="../signin.html" class="btn btn-link link-secondary text-decoration-none"><i class="fas fa-circle-user fa-sm"></i> Sign in</a>
-                    <a href="../#" class="btn btn-dark btn-sm rounded-pill px-2">Create account</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- header end -->
-    <!-- breadcrumb content begin -->
-    <section class="bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h6 class="d-none">Breadcrumb</h6>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb mb-0">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- breadcrumb content end -->
-    <main data-title="blog-single">
-        <!-- section content begin -->
-        <section class="py-5">
-            <div class="container">
-                <div class="row justify-content-center blog-article">
-                    <div class="col-md-12 col-lg-9">
-                        <article class="card rounded-0 rounded-bottom rounded-lg-1 blog-card">
-                            <div class="card-body p-3 py-md-4 px-md-5">
-                                <div class="blog-author d-flex align-items-center">
-                                    <img class="rounded-circle me-1" src="../img/user/author-85z9UC.jpg" alt="author" width="32" height="32">
-                                    <small class="text-muted">
-                                        Warren Wong<span class="mx-1">•</span>
-                                    </small>
-                                    <small class="text-muted">
-                                        December 29, 2022
-                                    </small>
-                                </div>
-                                <h2 class="fw-bold mt-3 mb-4">Turf houses: Iceland&#x27;s original &#x27;green&#x27; buildings</h2>
-                                <p>Known as "torfbæir", these ingeniously designed homes helped settle one of Europe's least-hospitable environments.</p>
-                                <p>With its lonely lava fields, sheer bluffs and stark boulder-strewn plains, Iceland is one of Europe's most barren countries. Across much of the island, the utter remoteness is striking, and that's especially true in the far-flung Northwestern Region, where I had come to learn about how Icelanders were able to settle one of the least hospitable and most volcanically active places on Earth.</p>
-                                <p>Settling Iceland, even for the hardened Norse, was tough back in the 9th Century CE. There were sub-zero temperatures and thick snow cover even on lower-lying ground throughout much of the year. The predominantly rocky nation never yielded the fecund land other European nations did: just one-fifth of it, mostly in the Northwestern Region, is cultivatable to this day. When Norse sailors first spotted the island, Iceland was roughly 30% forested, a low coverage compared to elsewhere in Scandinavia at the time. With limited timber, materials for building houses were hard to come by, especially since the island's basalt rocks were difficult to hew.&nbsp;</p>
-                                <figure class="figure my-3">
-                                    <img src="../img/user/image-post-JFq8ur.webp" class="img-fluid" alt="The ingenious design of turf houses helped Nordic settlers survive in Iceland">
-                                    <figcaption class="figure-caption text-center text-muted py-1">The ingenious design of turf houses helped Nordic settlers survive in Iceland</figcaption>
-                                </figure>
-                                <p>All things considered, it's surprising Iceland's settlers even survived. That they did can be attributed to one factor above others: torfbæir (turf houses), which were used for shelter since the days of the first Nordic settlers until the late 20th Century. These dwellings were built around basic timber frames, with blocks cut out of turf (grass and the soil up to 1m thick) arranged over a base layer of rock and packed in to form the structure's walls and roofs. Today, they can still be found across the country, sticking out of the landscape grass-side up like tussocky tents. There are especially good examples open to the public at Glaumbær in the north-west, Laufás in the north and Keldur in the south.</p>
-                                <figure class="my-4 px-5">
-                                    <blockquote class="blockquote blockquote-border">
-                                        <p>The importance of Icelandic turf houses goes beyond turf – it is also aesthetics, as part of the national heritage</p>
-                                    </blockquote>
-                                    <figcaption class="blockquote-footer">
-                                        Hjörleifur Stefánsson, an Icelandic architect
-                                    </figcaption>
-                                </figure>
-                                <p>Around the beginning of the 20th Century, philanthropists intervened, bemoaning the impracticality and unsavoury living conditions of turf houses. Timber, stone and then concrete, which were more readily available from the mid-19th Century onwards as overseas trade increased, became more commonly used for construction.&nbsp;</p>
-                            </div>
-                            <div class="card-footer blog-footer px-3 px-md-4 py-2">
-                                <div class="article-tags d-flex align-items-center text-muted float-start">
-                                    <i class="fas fa-tags text-dark me-1"></i><span class="fw-bold text-dark">Tags: &nbsp;</span>
-                                    <a href="../blog-find.html?tag=europe" class="text-muted text-decoration-none">europe</a>
-                                </div>
-                                <div class="share-btn float-start float-md-end mt-1 mt-md-0">
-                                    <a class="badge bg-facebook" data-id="fb"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="badge bg-twitter" data-id="tw"><i class="fab fa-twitter"></i></a>
-                                    <a class="badge bg-pinterest" data-id="pi"><i class="fab fa-pinterest-p"></i></a>
-                                    <a class="badge bg-email" data-id="mail"><i class="fas fa-envelope"></i></a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section content end -->
-        <!-- disquss begin -->
-        <div class="container py-2 mt-n4 mb-5">
-            <div class="row justify-content-center">
-                <div class="col-md-10 col-lg-9">
-                    <div id="disqus_thread"></div>
-                    <script>
-                        (function() { // DON'T EDIT BELOW THIS LINE
-                            var d = document, s = d.createElement('script');
-                            s.src = `https://html-demo.disqus.com/embed.js`;
-                            s.setAttribute('data-timestamp', +new Date());
-                            (d.head || d.body).appendChild(s);
-                        })();
-                    </script>
-                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                </div>
-            </div>
-        </div>
-        <!-- disquss content end -->
-    </main>
-    <!-- footer begin -->
-    <footer class="bg-light py-4">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 text-muted align-items-center">
-                <div class="col text-center text-md-center text-lg-start mb-2 mb-md-3 mb-lg-0">
-                    <p class="copyright-text mb-0">Blockit, a premade sections layout by <a class="link-primary text-decoration-none" href="https://www.indonez.com/" target="blank"><span class="fw-bold">Indonez</span></a> built using Bootstrap</p>
-                </div>
-                <div class="col">
-                    <div class="footer-logo d-flex justify-content-center justify-content-md-center justify-content-lg-end align-item-center">
-                        <!-- social media begin -->
-                        <div class="social-media-list small hstack gap-3">
-                        <div><a href="https://www.facebook.com/indonez" class="color-facebook text-decoration-none"><i class="fab fa-facebook-square"></i> Facebook</a></div>
-                        <div><a href="https://twitter.com/indonez_tw" class="color-twitter text-decoration-none"><i class="fab fa-twitter"></i> Twitter</a></div>
-                        <div><a href="https://www.instagram.com/indonez_ig/" class="color-instagram text-decoration-none"><i class="fab fa-instagram"></i> Instagram</a></div>
-                        </div>
-                        <!-- social media end -->
-                        <img class="ms-2 d-md-none d-inline-block d-lg-inline-block" src="../img/user/footer-logo-3mQgan.svg" alt="footer-logo" width="34" height="34">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer end -->
-    <!-- to top begin -->
-    <div class="d-none d-md-block">
-        <a href="#" class="to-top fas fa-arrow-up text-decoration-none text-white"></a>
-    </div>
-    <!-- to top end -->
-    <!-- javascript -->
-    <script src="../js/vendors/bootstrap.bundle.min.js"></script>
-    <script src="../js/vendors/share-buttons.min.js"></script>
-    <script src="../js/utilities.min.js"></script>
-    <script src="../js/config-theme.js"></script>
+	<!-- page loader begin -->
+	<div class="page-loader w-100 h-100 bg-white d-flex justify-content-center align-items-center position-fixed overflow-hidden">
+		<div class="spinner-grow spinner-grow-sm text-primary"></div>
+		<div class="spinner-grow spinner-grow-sm text-primary"></div>
+		<div class="spinner-grow spinner-grow-sm text-primary"></div>
+	</div>
+	<!-- page loader end -->
+	<!-- header begin -->
+	<header class="navbar navbar-expand-lg navbar-light bg-white">
+		<div class="container">
+			<a class="navbar-brand" href="../index.html">
+				<img src="../img/user/header-logo-LxR0VE.svg" alt="logo" width="123" height="36" class="d-inline-block">
+			</a>
+			<div class="collapse navbar-collapse d-flex justify-content-end d-none d-xl-block" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../about.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../contact.html">Contact</a>
+					</li>
+				</ul>
+				<div class="optional-link d-flex align-items-center ms-4 d-none d-xl-block">
+					<a href="../signin.html" class="btn btn-link link-secondary text-decoration-none"><i class="fas fa-circle-user fa-sm"></i> Sign in</a>
+					<a href="../#" class="btn btn-dark btn-sm rounded-pill px-2">Create account</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+	<!-- breadcrumb content begin -->
+	<section class="bg-primary">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h6 class="d-none">Breadcrumb</h6>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb mb-0">
+							<li class="breadcrumb-item"><a href="#">Home</a></li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- breadcrumb content end -->
+	<main data-title="blog-single">
+		<!-- section content begin -->
+		<section class="py-5">
+			<div class="container">
+				<div class="row justify-content-center blog-article">
+					<div class="col-md-12 col-lg-9">
+						<article class="card rounded-0 rounded-bottom rounded-lg-1 blog-card">
+							<div class="card-body p-3 py-md-4 px-md-5">
+								<div class="blog-author d-flex align-items-center">
+									<img class="rounded-circle me-1" src="../img/user/author-85z9UC.jpg" alt="author" width="32" height="32">
+									<small class="text-muted">
+										Warren Wong<span class="mx-1">•</span>
+									</small>
+									<small class="text-muted">
+										December 29, 2022
+									</small>
+								</div>
+								<h2 class="fw-bold mt-3 mb-4">Turf houses: Iceland&#x27;s original &#x27;green&#x27; buildings</h2>
+								<p>Known as "torfbæir", these ingeniously designed homes helped settle one of Europe's least-hospitable environments.</p>
+								<p>With its lonely lava fields, sheer bluffs and stark boulder-strewn plains, Iceland is one of Europe's most barren countries. Across much of the island, the utter remoteness is striking, and that's especially true in the far-flung Northwestern Region, where I had come to learn about how Icelanders were able to settle one of the least hospitable and most volcanically active places on Earth.</p>
+								<p>Settling Iceland, even for the hardened Norse, was tough back in the 9th Century CE. There were sub-zero temperatures and thick snow cover even on lower-lying ground throughout much of the year. The predominantly rocky nation never yielded the fecund land other European nations did: just one-fifth of it, mostly in the Northwestern Region, is cultivatable to this day. When Norse sailors first spotted the island, Iceland was roughly 30% forested, a low coverage compared to elsewhere in Scandinavia at the time. With limited timber, materials for building houses were hard to come by, especially since the island's basalt rocks were difficult to hew.&nbsp;</p>
+								<figure class="figure">
+									<img src="../img/user/image-post-JFq8ur.webp" class="img-fluid" alt="The ingenious design of turf houses helped Nordic settlers survive in Iceland">
+									<figcaption class="figure-caption text-center text-muted mt-1">The ingenious design of turf houses helped Nordic settlers survive in Iceland</figcaption>
+								</figure>
+								<p>All things considered, it's surprising Iceland's settlers even survived. That they did can be attributed to one factor above others: torfbæir (turf houses), which were used for shelter since the days of the first Nordic settlers until the late 20th Century. These dwellings were built around basic timber frames, with blocks cut out of turf (grass and the soil up to 1m thick) arranged over a base layer of rock and packed in to form the structure's walls and roofs. Today, they can still be found across the country, sticking out of the landscape grass-side up like tussocky tents. There are especially good examples open to the public at Glaumbær in the north-west, Laufás in the north and Keldur in the south.</p>
+								<figure class="my-4 px-5">
+									<blockquote class="blockquote blockquote-border">
+										<p>The importance of Icelandic turf houses goes beyond turf – it is also aesthetics, as part of the national heritage</p>
+									</blockquote>
+									<figcaption class="blockquote-footer">
+										Hjörleifur Stefánsson, an Icelandic architect
+									</figcaption>
+								</figure>
+								<p>Around the beginning of the 20th Century, philanthropists intervened, bemoaning the impracticality and unsavoury living conditions of turf houses. Timber, stone and then concrete, which were more readily available from the mid-19th Century onwards as overseas trade increased, became more commonly used for construction.&nbsp;</p>
+							</div>
+							<div class="card-footer blog-footer px-3 px-md-4 py-2">
+								<div class="article-tags d-flex align-items-center text-muted float-start">
+									<i class="fas fa-tags text-dark me-1"></i><span class="fw-bold text-dark">Tags: &nbsp;</span>
+									<a href="../blog-find.html?tag=europe" class="text-muted text-decoration-none">europe</a>
+								</div>
+								<div class="d-flex align-items-center float-start float-md-end">
+									<span class="fw-bold text-dark">Share this: &nbsp;</span>
+									<div class="share-btn mt-1 mt-md-0">
+										<a class="badge bg-facebook" data-id="fb"><i class="fab fa-facebook-f"></i></a>
+										<a class="badge bg-twitter" data-id="tw"><i class="fab fa-twitter"></i></a>
+										<a class="badge bg-pinterest" data-id="pi"><i class="fab fa-pinterest-p"></i></a>
+										<a class="badge bg-email" data-id="mail"><i class="fas fa-envelope"></i></a>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- section content end -->
+		<div class="container mt-n1 mb-3">
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-lg-7">
+					<div class="text-center">
+						<img class="rounded-circle mb-1" src="../img/user/author-85z9UC.jpg" alt="author" width="72" height="72" />
+						<h5 class="fw-bold mb-1">Warren Wong</h5>
+						<p class="text-muted">Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom &amp; spark the imagination.</p>
+						<div class="social-media-author d-flex justify-content-center hstack gap-2">
+							<div><a href="#some-link" class="color-facebook text-decoration-none"><i class="fab fa-facebook-square"></i></a></div>
+							
+							
+							
+							
+							
+							<div><a href="#some-link" class="color-twitter text-decoration-none"><i class="fab fa-twitter"></i></a></div>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							<div><a href="#some-link" class="color-linkedin text-decoration-none"><i class="fab fa-linkedin"></i></a></div>
+							
+							
+							
+							
+							
+							<div><a href="#some-link" class="color-email text-decoration-none"><i class="fas fa-earth-americas"></i></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- disquss begin -->
+		<div class="container pb-5 mt-n1 mb-2">
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-lg-9">
+					<div id="disqus_thread"></div>
+					<script>
+						(function() { // DON'T EDIT BELOW THIS LINE
+							var d = document, s = d.createElement('script');
+							s.src = `https://html-demo.disqus.com/embed.js`;
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+						})();
+					</script>
+					<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+				</div>
+			</div>
+		</div>
+		<!-- disquss content end -->
+	</main>
+	<!-- footer begin -->
+	<footer class="bg-light py-4">
+		<div class="container">
+			<div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 text-muted align-items-center">
+				<div class="col text-center text-md-center text-lg-start mb-2 mb-md-3 mb-lg-0">
+					<p class="copyright-text mb-0">Blockit, a premade sections layout by <a class="link-primary text-decoration-none" href="https://www.indonez.com/" target="blank"><span class="fw-bold">Indonez</span></a> built using Bootstrap</p>
+				</div>
+				<div class="col">
+					<div class="footer-logo d-flex justify-content-center justify-content-md-center justify-content-lg-end align-item-center">
+						<!-- social media begin -->
+						<div class="social-media-list small hstack gap-3">
+							<div><a href="https://www.facebook.com/indonez" class="color-facebook text-decoration-none"><i class="fab fa-facebook-square"></i> Facebook</a></div>
+							<div><a href="https://twitter.com/indonez_tw" class="color-twitter text-decoration-none"><i class="fab fa-twitter"></i> Twitter</a></div>
+							<div><a href="https://www.instagram.com/indonez_ig/" class="color-instagram text-decoration-none"><i class="fab fa-instagram"></i> Instagram</a></div>
+						</div>
+						<!-- social media end -->
+						<img class="ms-2 d-inline-block" src="../img/user/footer-logo-3mQgan.svg" alt="footer-logo" width="34" height="34">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer end -->
+	<!-- to top begin -->
+	<div class="d-none d-md-block">
+		<a href="#" class="to-top fas fa-arrow-up text-decoration-none text-white"></a>
+	</div>
+	<!-- to top end -->
+	<!-- javascript -->
+	<script src="../js/vendors/bootstrap.bundle.min.js"></script>
+	<script src="../js/vendors/share-buttons.min.js"></script>
+	<script src="../js/utilities.min.js"></script>
+	<script src="../js/config-theme.js"></script>
 </body>
 
 </html>

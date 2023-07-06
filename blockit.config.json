@@ -1,11 +1,10 @@
 {
     "footerHook": {
-        "useLogo": false,
+        "useLogo": true,
         "logoIndex": 0,
-        "showClass": "d-block",
+        "showClass": "d-inline-block",
         "hideClass": "d-none",
-        "logoClass": "footer-logo",
-        "copyrightClass": "copyright-text"
+        "logoClass": "footer-logo"
     },
     "jsVendors": [
         "./node_modules/bigger-picture/dist/bigger-picture.min.js",

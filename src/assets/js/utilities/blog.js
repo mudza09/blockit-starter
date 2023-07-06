@@ -295,7 +295,7 @@ class Blog {
     </div>
     <div class="card-footer blog-footer d-flex justify-content-between align-items-center px-3 px-md-4 py-2">
         <span class="badge bg-primary">${category}</span>
-        <a href="${this.sanitizePath}/${link}" class="btn btn-link link-primary text-decoration-none p-0">Read more<i class="fas fa-arrow-right fa-sm ms-1"></i></a>
+        <a href="${this.sanitizePath}/${link}" class="btn btn-link text-decoration-none p-0">Read more<i class="fas fa-angle-right fa-xs ms-1"></i></a>
     </div>
 </article>`
     }

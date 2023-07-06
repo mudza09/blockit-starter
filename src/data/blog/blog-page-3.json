@@ -14,7 +14,25 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Investing",
       "tags": [
@@ -22,6 +40,8 @@
         "wealth"
       ],
       "image": "img/user/image-featured-cHWUtS.jpg",
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -106,9 +126,7 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "January 04, 2023",
-      "timeCreated": "03:37 PM",
-      "timeModified": "10:27 PM"
+      "timeCreated": "03:37 PM"
     },
     {
       "title": "The LastPass disclosure of leaked password vaults is being torn apart by security experts",
@@ -116,13 +134,33 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Technology",
       "tags": [
         "security"
       ],
       "image": false,
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -171,9 +209,7 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "December 29, 2022",
-      "timeCreated": "03:29 PM",
-      "timeModified": "04:21 PM"
+      "timeCreated": "03:29 PM"
     },
     {
       "title": "Turf houses: Iceland's original 'green' buildings",
@@ -181,13 +217,33 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Travel",
       "tags": [
         "europe"
       ],
       "image": false,
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -246,9 +302,7 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "December 29, 2022",
-      "timeCreated": "03:21 PM",
-      "timeModified": "04:21 PM"
+      "timeCreated": "03:21 PM"
     }
   ]
 }

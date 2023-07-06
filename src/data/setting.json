@@ -32,29 +32,64 @@
     {
       "id": "2LKIG3",
       "name": "Indonez",
-      "email": "templates@indonez.com",
-      "avatar": "img/blockit/in-avatar.svg",
-      "bio": "Freelancer SEO copywriter who’s \"extremely good at one thing\" helping companies rank for their target keywords."
+      "email": "hello@indonez.com",
+      "avatar": "img/user/author-SYUj0x.png",
+      "bio": "Freelance front-end developer who is \"extremely good at one thing\" and helps everyone to build their dream website with stunning visuals.",
+      "socialMedia": [
+        {
+          "facebook": "https://www.facebook.com/indonez"
+        },
+        {
+          "twitter": "https://twitter.com/indonez_tw"
+        },
+        {
+          "instagram": "https://www.instagram.com/indonez_ig/"
+        },
+        {
+          "linkedin": false
+        },
+        {
+          "website": "https://www.indonez.com"
+        }
+      ]
     },
     {
       "id": "tXeY2N",
       "name": "Warren Wong",
       "email": "warren@email.com",
       "avatar": "img/user/author-85z9UC.jpg",
-      "bio": "Political anthropologist whose work is focused on contextualizing the force and consequences of governance through time."
+      "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+      "socialMedia": [
+        {
+          "facebook": "#some-link"
+        },
+        {
+          "twitter": "#some-link"
+        },
+        {
+          "instagram": false
+        },
+        {
+          "linkedin": "#some-link"
+        },
+        {
+          "website": "#some-link"
+        }
+      ]
     }
   ],
   "blog": {
     "asBlog": [
       "blog",
-      "keren"
+      false
     ],
     "categories": [
       "Health",
       "Politics",
       "Technology",
       "Travel",
-      "Investing"
+      "Investing",
+      "Menu"
     ],
     "postPerPage": "3",
     "showWidgets": {

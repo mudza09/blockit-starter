@@ -1,0 +1,20 @@
+<div class="container mt-n1 mb-3">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-7">
+            <div class="text-center">
+                <img class="rounded-circle mb-1" src="{{root}}{{blog.author.avatar}}" alt="author" width="72" height="72" />
+                <h5 class="fw-bold mb-1">{{blog.author.name}}</h5>
+                <p class="text-muted">{{blog.author.bio}}</p>
+                <div class="social-media-author d-flex justify-content-center hstack gap-2{{#unless blog.comments}} mb-5{{/unless}}{{#unless setting.blog.disqussShortname}} mb-5{{/unless}}">
+                {{#each blog.author.socialMedia}}
+                    {{#if this.facebook}}<div><a href="{{this.facebook}}" class="color-facebook text-decoration-none"><i class="fab fa-facebook-square"></i></a></div>{{/if}}
+                    {{#if this.twitter}}<div><a href="{{this.twitter}}" class="color-twitter text-decoration-none"><i class="fab fa-twitter"></i></a></div>{{/if}}
+                    {{#if this.instagram}}<div><a href="{{this.instagram}}" class="color-instagram text-decoration-none"><i class="fab fa-instagram"></i></a></div>{{/if}}
+                    {{#if this.linkedin}}<div><a href="{{this.linkedin}}" class="color-linkedin text-decoration-none"><i class="fab fa-linkedin"></i></a></div>{{/if}}
+                    {{#if this.website}}<div><a href="{{this.website}}" class="color-email text-decoration-none"><i class="fas fa-earth-americas"></i></a></div>{{/if}}
+                {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

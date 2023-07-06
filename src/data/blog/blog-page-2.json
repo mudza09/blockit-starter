@@ -14,13 +14,33 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Health",
       "tags": [
         "diet"
       ],
       "image": "img/user/image-featured-S3bwOc.jpg",
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -77,9 +97,7 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "January 04, 2023",
-      "timeCreated": "04:08 PM",
-      "timeModified": "10:15 PM"
+      "timeCreated": "04:08 PM"
     },
     {
       "title": "A defiant move to the Norwegian Arctic",
@@ -87,13 +105,33 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Travel",
       "tags": [
         "europe"
       ],
       "image": false,
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -152,9 +190,7 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "December 29, 2022",
-      "timeCreated": "04:03 PM",
-      "timeModified": "04:04 PM"
+      "timeCreated": "04:03 PM"
     },
     {
       "title": "The Bidens make an island escape ahead of consequential 2024 announcement",
@@ -162,7 +198,25 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Politics",
       "tags": [
@@ -170,6 +224,8 @@
         "usa"
       ],
       "image": false,
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -232,9 +288,7 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "December 29, 2022",
-      "timeCreated": "03:56 PM",
-      "timeModified": "04:12 PM"
+      "timeCreated": "03:56 PM"
     }
   ]
 }

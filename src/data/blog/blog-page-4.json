@@ -14,13 +14,33 @@
       "author": {
         "id": "tXeY2N",
         "name": "Warren Wong",
-        "avatar": "img/user/author-85z9UC.jpg"
+        "avatar": "img/user/author-85z9UC.jpg",
+        "bio": "Growing up in Chicago, where he discovered his love of writing, he thought that words might open doors to freedom & spark the imagination.",
+        "socialMedia": [
+          {
+            "facebook": "#some-link"
+          },
+          {
+            "twitter": "#some-link"
+          },
+          {
+            "instagram": false
+          },
+          {
+            "linkedin": "#some-link"
+          },
+          {
+            "website": "#some-link"
+          }
+        ]
       },
       "category": "Health",
       "tags": [
         "virus"
       ],
       "image": false,
+      "biography": true,
+      "comments": true,
       "hidden": false,
       "blocks": [
         {
@@ -106,9 +126,7 @@
         }
       ],
       "dateCreated": "December 29, 2022",
-      "dateModified": "December 29, 2022",
-      "timeCreated": "03:04 PM",
-      "timeModified": "04:12 PM"
+      "timeCreated": "03:04 PM"
     }
   ]
 }

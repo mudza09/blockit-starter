@@ -1,112 +1,179 @@
-// Bigger picture
-@mixin fillall() {
+@mixin bpfillall() {
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 }
 
-.bp-wrap {
-	@include fillall;
-	position: fixed;
-	z-index: 1080;
-	contain: layout style size;
-	touch-action: none;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	> div:first-child {
-		position: absolute;
-		@include fillall;
-		background: rgba(0, 0, 0, 0.75);
-		transform: translateZ(0);
+@keyframes bp-fadein {
+	from {
+		opacity: 0.01;
 	}
-	svg {
-		fill: #fff;
-		transform: translateZ(0);
+	to {
+		opacity: 1;
+	}
+}
+@keyframes bp-bar {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+@keyframes bp-o {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
 	}
 }
 
-.bp-item {
-	position: absolute;
+.bp-wrap {
+	@include bpfillall;
+	position: fixed;
+	z-index: 999;
+	/* If you're mounting on a portion of the screen and need visible
+	overflow on .bp-wrap, change contain to "layout" on that instance */
+	contain: strict;
+	touch-action: none;
+	-webkit-tap-highlight-color: transparent;
+	> div:first-child {
+		position: absolute;
+		@include bpfillall;
+		background: rgba(0, 0, 0, 0.75);
+		animation: bp-fadein 0.48s cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
+}
+
+.bp-vid {
+	audio {
+		position: absolute;
+		left: 14px;
+		width: calc(100% - 28px);
+		bottom: 14px;
+		height: 50px;
+	}
 }
 
 .bp-inner {
-	@include fillall;
+	@include bpfillall;
 	position: absolute;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+}
+
+.bp-html {
+	display: contents;
+	> :first-child {
+		margin: auto;
+	}
 }
 
 .bp-img-wrap {
+	@include bpfillall;
 	position: absolute;
-	@include fillall();
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	&.dragging {
+	contain: strict;
+	&.bp-drag {
 		.bp-img {
 			cursor: grabbing;
 		}
 	}
 }
 
+// when closing a zoomed image contain: strict hides overflow
+.bp-close {
+	contain: layout size;
+}
+
 .bp-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
 	user-select: none;
 	cursor: zoom-in;
-	div,
-	img {
+	background-size: 100% 100%;
+	img,
+	div {
 		position: absolute;
-		@include fillall;
-		background-size: 100% 100%;
-		border-radius: $border-radius-sm;
+		@include bpfillall;
 	}
 	.bp-o {
 		display: none;
 	}
 }
-.zoomed {
+.bp-zoomed {
 	.bp-img {
 		cursor: grab;
 	}
 	.bp-cap {
 		opacity: 0;
+		animation: none !important;
+	}
+}
+
+// when zoomed on small screens, hide controls
+.bp-zoomed.bp-small .bp-controls {
+	opacity: 0;
+	button {
+		pointer-events: none;
+	}
+}
+
+.bp-controls {
+	position: absolute;
+	@include bpfillall;
+	pointer-events: none;
+	text-align: left;
+	transition: opacity 0.3s;
+	animation: bp-fadein 0.3s;
+	button {
+		pointer-events: auto;
+		cursor: pointer;
+		position: absolute;
+		border: 0;
+		background: rgba(0, 0, 0, 0.15);
+		opacity: 0.9;
+		transition: all 0.1s;
+		contain: content;
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.2);
+			opacity: 1;
+		}
+	}
+	svg {
+		fill: #fff;
 	}
 }
 
 .bp-count {
 	position: absolute;
 	color: rgba(255, 255, 255, 0.9);
-	margin: 20px;
-	pointer-events: none;
-	transform: translateZ(0);
+	line-height: 1;
+	margin: 16px;
+	height: 50px;
+	width: 100px;
 }
 
 .bp-prev,
 .bp-next {
-	cursor: pointer;
-	position: absolute;
-	border: 0;
-	background-color: rgba(0, 0, 0, 0.15);
 	top: 50%;
 	right: 20px;
 	margin-top: -32px;
 	height: 50px;
 	width: 50px;
-	transition: all 0.1s;
 	border-radius: 50rem;
-	opacity: 0.9;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 	&:hover {
-		background-color: rgba(0, 0, 0, 0.2);
-		opacity: 1;
+		&:before {
+			transform: translateX(-2px);
+		}
 	}
 	&:before {
 		content: "\f105";
         font-family: 'Font Awesome 6 Free';
         font-size: 1rem;
-        color: $white;
+		color: $white;
+		transition: all 0.2s;
 	}
 }
 .bp-prev {
@@ -115,54 +182,39 @@
 	transform: scalex(-1);
 }
 .bp-x {
-	cursor: pointer;
-	position: absolute;
-	border: 0;
-	background: rgba(0, 0, 0, 0.15);
 	top: 20px;
 	right: 20px;
-	opacity: 0.9;
-	transition: all 0.1s;
 	height: 50px;
 	width: 50px;
 	border-radius: 50rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 	&:before {
-        content: "\f00d";
+		content: "\f00d";
         font-family: 'Font Awesome 6 Free';
         font-size: 1rem;
         color: $white;
-	}
-	&:hover {
-		background-color: rgba(0, 0, 0, 0.2);
-		opacity: 1;
 	}
 }
 
 .bp-if,
 .bp-vid {
+	position: relative;
+	margin: auto;
+	background: #000;
+	background-size: 100% 100%;
 	iframe,
+	video,
 	div {
-		@include fillall;
+		@include bpfillall;
 		position: absolute;
 		border: 0;
-		backface-visibility: hidden;
-		border-radius: $border-radius-sm;
 	}
-}
-
-.bp-if {
-	background: #000;
-	border-radius: $border-radius-sm;
 }
 
 .bp-load {
 	display: flex;
-	background-size: cover;
-	background-position: center;
+	background-size: 100% 100%;
 	overflow: hidden;
+	z-index: 1;
 }
 .bp-bar {
 	position: absolute;
@@ -172,36 +224,21 @@
 	width: 100%;
 	transform: translateX(-100%);
 	background: rgba(255, 255, 255, 0.9);
+	border-radius: 0 3px 3px 0;
 	animation: bp-bar 4s both;
 }
-@keyframes bp-bar {
-	0% {
-		transform: translateX(-100%);
-	}
-	100% {
-		transform: translateX(0);
-	}
-}
+
 .bp-o,
 .bp-o:after {
 	border-radius: 50%;
-	width: 100px;
-	height: 100px;
+	width: 90px;
+	height: 90px;
 }
 .bp-o {
 	margin: auto;
 	border: 10px solid rgba(255, 255, 255, 0.2);
 	border-left-color: rgba(255, 255, 255, 0.9);
 	animation: bp-o 1s infinite linear;
-}
-
-@keyframes bp-o {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
 }
 
 .bp-cap {
@@ -219,6 +256,7 @@
 	width: -moz-fit-content;
 	display: table;
 	transition: opacity 0.3s;
+	animation: bp-fadein 0.2s;
 	a {
 		color: inherit;
 	}
@@ -226,7 +264,20 @@
 
 .bp-inline {
 	position: absolute;
-	&:not(.zoomed) {
+}
+
+.bp-lock {
+	overflow-y: hidden;
+	body {
+		overflow: scroll;
+	}
+}
+
+.bp-noclose {
+	.bp-x {
+		display: none;
+	}
+	&:not(.bp-zoomed) {
 		touch-action: pan-y;
 		.bp-img-wrap {
 			cursor: zoom-in;
@@ -234,34 +285,41 @@
 	}
 }
 
+@media (prefers-reduced-motion) {
+	.bp-wrap * {
+		animation-duration: 0s !important;
+	}
+}
+
 @media (max-width: 500px) {
 	.bp-x {
-		height: 50px;
-		width: 50px;
+		height: 47px;
+		width: 47px;
 		&:before {
 			width: 34px;
-			top: 7px;
-			right: 7px;
+			top: 6px;
+			right: 6px;
 		}
-	}
-	.bp-count {
-		margin: 16px;
 	}
 	.bp-prev,
 	.bp-next {
 		margin-top: -27px;
-		height: 57px;
-		width: 50px;
+		height: 54px;
+		width: 45px;
 		&:before {
-			top: 8px;
+			top: 7px;
+			left: 2px;
 			width: 43px;
 		}
 	}
 	.bp-o,
 	.bp-o:after {
-		border-width: 8px;
+		border-width: 6px;
 		width: 60px;
 		height: 60px;
+	}
+	.bp-count {
+		margin: 12px 10px;
 	}
 }
 

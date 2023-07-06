@@ -1,6 +1,9 @@
-// Fontawesome
-$fa-font-path: "../fonts";
+$fa-font-display:                               block;
+$fa-font-path:                                  "../fonts";
 
-@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
-@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+// importing core styling file
+@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+
+// our project needs Solid + Brands
+@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/brands";
