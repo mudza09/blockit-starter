@@ -1,4 +1,8 @@
 {
+    "port": {
+        "backend": "3003",
+        "frontend": "3000"
+    },
     "footerHook": {
         "useLogo": true,
         "logoIndex": 0,
@@ -11,5 +15,11 @@
         "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
         "./node_modules/share-buttons/dist/share-buttons.js",
         "./node_modules/shufflejs/dist/shuffle.min.js"
-    ]
+    ],
+    "imageQuality": {
+        "jpeg": 80,
+        "png": 80,
+        "gif": 80,
+        "webp": 80
+    }
 }

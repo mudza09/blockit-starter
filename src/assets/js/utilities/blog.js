@@ -34,9 +34,9 @@ class Blog {
 
     getData() {
         return Promise.all([
-            fetch(`${this.sanitizePath}/data/data-blog.json`),
-            fetch(`${this.sanitizePath}/data/data-category.json`),
-            fetch(`${this.sanitizePath}/data/data-tag.json`)
+            fetch('./data/data-blog.json'),
+            fetch('./data/data-category.json'),
+            fetch('./data/data-tag.json')
         ])
     }
 
@@ -249,6 +249,7 @@ class Blog {
         const notFoundArr = []
 
         if(document.querySelector('[data-title="blog-find"]') && params.has('result')) {
+            
             data.forEach(post => {
                 const title = post.title.toLowerCase()
                 const body = post.content.toLowerCase()
@@ -259,14 +260,14 @@ class Blog {
                 notFoundArr.push(title.indexOf(params.get('result')))
                 notFoundArr.push(body.indexOf(params.get('result')))
 
-                if(title.indexOf(params.get('result')) > -1 || body.indexOf(params.get('result')) > -1) {
+                if(params.get('result').length > 2 && (title.indexOf(params.get('result')) > -1 || body.indexOf(params.get('result')) > -1)) {
                     const articleDiv = document.createElement('div')
                     articleDiv.innerHTML = this.postFormat(post)
                     postWrap.appendChild(articleDiv)
                 }
             })
 
-            if(this.checkDiff(notFoundArr) !== true) {
+            if(params.get('result').length <= 2 || this.checkDiff(notFoundArr) !== true) {
                 const notFoundDiv = document.createElement('div')
                 notFoundDiv.innerHTML = `<article class="card mb-4 mb-lg-0">
     <div class="card-body text-center px-4 py-5">

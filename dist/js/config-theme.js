@@ -17,18 +17,14 @@
         //----------- 1. Slideshow -----------
         theme_slideshow: function() {
             new CarouselConfig({
-                fadeTransition: true,    
-                darkMode: false,
-                interval: 6000,
+                element: '#main-slideshow',         // carousel element id
+                fadeTransition: false,              // default is slide, use 'true' if want use fade effect
+                interval: 6000,                     // interval between change slide
                 control: {
-                    hide: false,
-                    onHover: false
+                    type: 'button',                 // the options is: 'button', 'indicator' and 'both'
+                    onHover: true                   // control appears when hover in careousel element
                 },
-                indicators: {
-                    hide: false,
-                    onHover: false
-                },
-                height: {
+                height: {                           // height for every devices
                     desktop: '460px',
                     tablet: '380px',
                     phone: '320px'

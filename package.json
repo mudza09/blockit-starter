@@ -1,9 +1,14 @@
 {
   "name": "starter",
   "title": "Starter",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "This is starter template for using Blockit Builder",
-  "private": true,
+  "author": "mudza09",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mudza09/blockit-starter.git"
+  },
   "scripts": {
     "build": "node ./node_modules/blockit-builder/blockit.js --build",
     "blockit": "node ./node_modules/blockit-builder/blockit.js"
@@ -11,16 +16,14 @@
   "browserslist": [
     "last 2 years"
   ],
-  "author": "mudza09",
-  "license": "MIT",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "6.4.0",
-    "bigger-picture": "1.1.8",
-    "bootstrap": "5.3.0",
+    "@fortawesome/fontawesome-free": "6.4.2",
+    "bigger-picture": "1.1.12",
+    "bootstrap": "5.3.2",
     "share-buttons": "1.9.0",
     "shufflejs": "6.1.0"
   },
   "devDependencies": {
-    "blockit-builder": "^3.3.1"
+    "blockit-builder": "3.3.3"
   }
 }
