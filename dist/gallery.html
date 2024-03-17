@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Premium HTML5 Template by Indonez">
+	<meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, javascript">
+	<meta name="author" content="Indonez">
+	<meta name="theme-color" content="#2E89EA" />
+	<!-- preload assets -->
+	<link rel="preload" href="fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/nunito-v12-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/nunito-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="css/style.css" as="style">
+	<link rel="preload" href="js/vendors/bootstrap.bundle.min.js" as="script">
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<!-- touch icon -->
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
+	<title>Gallery - Blockit Starter HTML5 Template</title>
+</head>
+
+<body>
+	<!-- page loader begin -->
+	<div class="page-loader w-100 h-100 bg-white d-flex justify-content-center align-items-center position-fixed overflow-hidden">
+		<div class="spinner-grow spinner-grow-sm text-primary"></div>
+		<div class="spinner-grow spinner-grow-sm text-primary"></div>
+		<div class="spinner-grow spinner-grow-sm text-primary"></div>
+	</div>
+	<!-- page loader end -->
+	<!-- header begin -->
+	<header class="navbar navbar-expand-lg navbar-light bg-white">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="img/user/header-logo-LxR0VE.svg" alt="logo" width="123" height="36" class="d-inline-block">
+			</a>
+			<div class="collapse navbar-collapse d-flex justify-content-end d-none d-xl-block" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+				<div class="optional-link d-flex align-items-center ms-4 d-none d-xl-block">
+					<a href="signin.html" class="btn btn-link link-secondary text-decoration-none"><i class="fas fa-circle-user fa-sm"></i> Sign in</a>
+					<a href="#" class="btn btn-dark btn-sm rounded-pill px-2">Create account</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+	<!-- breadcrumb content begin -->
+	<section class="bg-primary">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h6 class="d-none">Breadcrumb</h6>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb mb-0">
+							<li class="breadcrumb-item"><a href="#">Home</a></li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- breadcrumb content end -->
+	<main>
+		<!-- section content begin -->
+		<section class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<ul class="nav justify-content-center masonry-filter">
+							<li class="nav-item border-end">
+								<button class="btn btn-link link-secondary text-decoration-none shadow-none px-3 py-0" data-group="all">All</button>
+							</li>
+							<li class="nav-item border-end">
+								<button class="btn btn-link link-secondary text-decoration-none shadow-none px-3 py-0" data-group="photography">Photography</button>
+							</li>
+							<li class="nav-item border-end">
+								<button class="btn btn-link link-secondary text-decoration-none shadow-none px-3 py-0" data-group="branding">Branding</button>
+							</li>
+							<li class="nav-item">
+								<button class="btn btn-link link-secondary text-decoration-none shadow-none px-3 py-0" data-group="development">Development</button>
+							</li>
+						</ul>
+						<div class="row row-cols-md-2 row-cols-lg-3 g-2 mt-4 masonry-wrapper bigger-picture">
+							<div class="col masonry-item" data-groups='["photography"]'>
+								<div class="card text-white border-0">
+									<a href="img/blockit/in-gallery-image-7.jpg" data-img="img/blockit/in-gallery-image-7.jpg" data-thumb="img/blockit/in-gallery-image-7.jpg" data-alt="Gallery" data-width="600" data-height="410">
+										<img src="img/blockit/in-gallery-image-7.jpg" class="img-fluid rounded-1" alt="gallery-image">
+										<div class="card-img-overlay d-flex justify-content-center align-items-center">
+											<div class="icon-wrap rounded-circle">
+												<i class="fas fa-up-right-and-down-left-from-center fa-sm text-white"></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h5 class="fw-bold text-center mt-2 mb-0">Sankt Christina</h5>
+								<p class="text-muted text-center">Photography</p>
+							</div>
+							<div class="col masonry-item" data-groups='["development"]'>
+								<div class="card text-white border-0">
+									<a href="img/blockit/in-gallery-image-12.jpg" data-img="img/blockit/in-gallery-image-12.jpg" data-thumb="img/blockit/in-gallery-image-12.jpg" data-alt="Gallery" data-width="600" data-height="410">
+										<img src="img/blockit/in-gallery-image-12.jpg" class="img-fluid rounded-1" alt="gallery-image">
+										<div class="card-img-overlay d-flex justify-content-center align-items-center">
+											<div class="icon-wrap rounded-circle">
+												<i class="fas fa-up-right-and-down-left-from-center fa-sm text-white"></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h5 class="fw-bold text-center mt-2 mb-0">Project Nine</h5>
+								<p class="text-muted text-center">Development</p>
+							</div>
+							<div class="col masonry-item" data-groups='["branding"]'>
+								<div class="card text-white border-0">
+									<a href="img/blockit/in-gallery-image-8.jpg" data-img="img/blockit/in-gallery-image-8.jpg" data-thumb="img/blockit/in-gallery-image-8.jpg" data-alt="Gallery" data-width="600" data-height="410">
+										<img src="img/blockit/in-gallery-image-8.jpg" class="img-fluid rounded-1" alt="gallery-image">
+										<div class="card-img-overlay d-flex justify-content-center align-items-center">
+											<div class="icon-wrap rounded-circle">
+												<i class="fas fa-up-right-and-down-left-from-center fa-sm text-white"></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h5 class="fw-bold text-center mt-2 mb-0">Beats Cafe</h5>
+								<p class="text-muted text-center">Branding</p>
+							</div>
+							<div class="col masonry-item" data-groups='["branding"]'>
+								<div class="card text-white border-0">
+									<a href="img/blockit/in-gallery-image-10.jpg" data-img="img/blockit/in-gallery-image-10.jpg" data-thumb="img/blockit/in-gallery-image-10.jpg" data-alt="Gallery" data-width="600" data-height="410">
+										<img src="img/blockit/in-gallery-image-10.jpg" class="img-fluid rounded-1" alt="gallery-image">
+										<div class="card-img-overlay d-flex justify-content-center align-items-center">
+											<div class="icon-wrap rounded-circle">
+												<i class="fas fa-up-right-and-down-left-from-center fa-sm text-white"></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h5 class="fw-bold text-center mt-2 mb-0">Limoncello</h5>
+								<p class="text-muted text-center">Branding</p>
+							</div>
+							<div class="col masonry-item" data-groups='["development"]'>
+								<div class="card text-white border-0">
+									<a href="img/blockit/in-gallery-image-11.jpg" data-img="img/blockit/in-gallery-image-11.jpg" data-thumb="img/blockit/in-gallery-image-11.jpg" data-alt="Gallery" data-width="600" data-height="410">
+										<img src="img/blockit/in-gallery-image-11.jpg" class="img-fluid rounded-1" alt="gallery-image">
+										<div class="card-img-overlay d-flex justify-content-center align-items-center">
+											<div class="icon-wrap rounded-circle">
+												<i class="fas fa-up-right-and-down-left-from-center fa-sm text-white"></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h5 class="fw-bold text-center mt-2 mb-0">Earthquake App</h5>
+								<p class="text-muted text-center">Development</p>
+							</div>
+							<div class="col masonry-item" data-groups='["photography"]'>
+								<div class="card text-white border-0">
+									<a href="img/blockit/in-gallery-image-9.jpg" data-img="img/blockit/in-gallery-image-9.jpg" data-thumb="img/blockit/in-gallery-image-9.jpg" data-alt="Gallery" data-width="600" data-height="410">
+										<img src="img/blockit/in-gallery-image-9.jpg" class="img-fluid rounded-1" alt="gallery-image">
+										<div class="card-img-overlay d-flex justify-content-center align-items-center">
+											<div class="icon-wrap rounded-circle">
+												<i class="fas fa-up-right-and-down-left-from-center fa-sm text-white"></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h5 class="fw-bold text-center mt-2 mb-0">Modern Building</h5>
+								<p class="text-muted text-center">Photography</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- section content end -->
+		<!-- section content begin -->
+		<section class="pt-0 pb-5">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-10 col-lg-9">
+						<div class="row gx-0 gx-md-5 gx-lg-5 d-flex align-items-center">
+							<div class="col-md-12 col-lg-5">
+								<img src="img/blockit/in-testimoni-1.png" class="mx-auto mx-md-auto mx-lg-0 d-block mb-2 mb-md-3 mb-lg-0" alt="client-testimoni" width="300">
+							</div>
+							<div class="col-md-12 col-lg-7">
+								<blockquote class="blockquote text-muted">
+									<p class="fs-4">Quick, easy, and super helpful to collect and organise feedback from all kinds of channels we use to communicate with our customers.</p>
+								</blockquote>
+								<h6 class="mt-2 mb-0">Anthony Torres</h6>
+								<span class="blockquote-footer">Copywriter at Aurous</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- section content end -->
+	</main>
+	<!-- footer begin -->
+	<footer class="bg-light py-4">
+		<div class="container">
+			<div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 text-muted align-items-center">
+				<div class="col text-center text-md-center text-lg-start mb-2 mb-md-3 mb-lg-0">
+					<p class="copyright-text mb-0">Blockit, a premade sections layout by <a class="link-primary text-decoration-none" href="https://www.indonez.com/" target="blank"><span class="fw-bold">Indonez</span></a> built using Bootstrap</p>
+				</div>
+				<div class="col">
+					<div class="footer-logo d-flex justify-content-center justify-content-md-center justify-content-lg-end align-item-center">
+						<!-- social media begin -->
+						<div class="social-media-list small hstack gap-3">
+							<div><a href="https://facebook.com/indonez" class="color-facebook text-decoration-none"><i class="fab fa-facebook"></i> Facebook</a></div>
+							<div><a href="https://x.com/indonez_tw" class="color-twitter text-decoration-none"><i class="fab fa-x-twitter"></i> X</a></div>
+							<div><a href="https://instagram.com/indonez_ig/" class="color-instagram text-decoration-none"><i class="fab fa-instagram"></i> Instagram</a></div>
+						</div>
+						<!-- social media end -->
+						<img class="ms-2 d-inline-block" src="img/user/footer-logo-3mQgan.svg" alt="footer-logo" width="34" height="34">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer end -->
+	<!-- to top begin -->
+	<div class="d-none d-md-block">
+		<a href="#" class="to-top fas fa-arrow-up text-decoration-none text-white"></a>
+	</div>
+	<!-- to top end -->
+	<!-- javascript -->
+	<script src="js/vendors/bootstrap.bundle.min.js"></script>
+	<script src="js/vendors/bigger-picture.min.js"></script>
+	<script src="js/vendors/shuffle.min.js"></script>
+	<script src="js/utilities.min.js"></script>
+	<script src="js/config-theme.js"></script>
+</body>
+
+</html>
