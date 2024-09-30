@@ -6,7 +6,7 @@ asBlog: true
 ---
 <main data-title="blog">
     <!-- section content begin -->
-    <section class="py-5">
+    <div class="py-5">
         <div class="container">
             <div class="row gy-3 gy-lg-0{{#if setting.blog.showWidgets.allHide}} justify-content-center{{/if}}">
                 <div {{#unless setting.blog.showWidgets.allHide}}class="col-md-12 col-lg-8"{{/unless}}{{#if setting.blog.showWidgets.allHide}}class="col-lg-9"{{/if}}>
@@ -31,6 +31,6 @@ asBlog: true
                 {{/unless}}
             </div>
         </div>
-    </section>
+    </div>
     <!-- section content end -->
 </main>

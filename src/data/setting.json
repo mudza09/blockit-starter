@@ -4,7 +4,7 @@
     "metaDescription": "Premium HTML5 Template by Indonez",
     "metaKeywords": [
       "blockit",
-      "uikit3",
+      "bootstrap",
       "indonez",
       "handlebars",
       "scss",
@@ -111,5 +111,9 @@
       "js": false
     },
     "preloadCritical": true
+  },
+  "port": {
+    "backend": "3003",
+    "frontend": "3000"
   }
 }

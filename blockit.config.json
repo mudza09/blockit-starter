@@ -8,7 +8,8 @@
         "logoIndex": 0,
         "showClass": "d-inline-block",
         "hideClass": "d-none",
-        "logoClass": "footer-logo"
+        "logoClass": "footer-logo",
+        "copyrightClass": "copyright-text"
     },
     "jsVendors": [
         "./node_modules/bigger-picture/dist/bigger-picture.min.js",

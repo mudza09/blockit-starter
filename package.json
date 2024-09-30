@@ -1,7 +1,7 @@
 {
   "name": "starter",
   "title": "Starter",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "This is starter template for using Blockit Builder",
   "author": "mudza09",
   "license": "MIT",
@@ -24,6 +24,6 @@
     "shufflejs": "6.1.0"
   },
   "devDependencies": {
-    "blockit-builder": "3.3.4"
+    "blockit-builder": "3.3.5"
   }
 }
